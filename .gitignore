@@ -20,5 +20,5 @@ test-output/*
 .settings/*
 .project
 .classpath
-
+.*.sw*
 .DS_Store
