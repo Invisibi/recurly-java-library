@@ -31,6 +31,9 @@ public class Coupon extends RecurlyObject {
     @XmlTransient
     public static final String COUPON_RESOURCE = "/coupons";
 
+    @XmlElement(name = "discount_in_cents")
+    private RecurlyDiscountInCents recurlyDiscountInCents;
+
     @XmlElement(name = "name")
     private String name;
 
@@ -84,6 +87,14 @@ public class Coupon extends RecurlyObject {
 
     @XmlElement(name = "state")
     private String state;
+
+    public void setRecurlyDiscountInCents(RecurlyDiscountInCents discountInCents) {
+        this.recurlyDiscountInCents = discountInCents;
+    }
+
+    public RecurlyDiscountInCents getRecurlyDiscountInCents(){
+        return this.recurlyDiscountInCents;
+    }
 
     public String getState() {
         return state;
