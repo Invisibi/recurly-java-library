@@ -32,7 +32,7 @@ public class Coupon extends RecurlyObject {
     public static final String COUPON_RESOURCE = "/coupons";
 
     @XmlElement(name = "discount_in_cents")
-    private RecurlyDiscountInCents recurlyDiscountInCents;
+    private DiscountInCents discountInCents;
 
     @XmlElement(name = "name")
     private String name;
@@ -82,18 +82,18 @@ public class Coupon extends RecurlyObject {
     @XmlElement(name = "discount_percent")
     private Integer discountPercent;
 
-    @XmlElement(name = "discount_in_cents")
-    private Integer discountInCents;
+//    @XmlElement(name = "discount_in_cents")
+//    private Integer discountInCents;
 
     @XmlElement(name = "state")
     private String state;
 
-    public void setRecurlyDiscountInCents(RecurlyDiscountInCents discountInCents) {
-        this.recurlyDiscountInCents = discountInCents;
+    public void setDiscountInCents(DiscountInCents discountInCents) {
+        this.discountInCents = discountInCents;
     }
 
-    public RecurlyDiscountInCents getRecurlyDiscountInCents(){
-        return this.recurlyDiscountInCents;
+    public DiscountInCents getDiscountInCents(){
+        return this.discountInCents;
     }
 
     public String getState() {
@@ -203,14 +203,14 @@ public class Coupon extends RecurlyObject {
         this.singleUse = booleanOrNull(singleUse);
     }
 
-    public Integer getDiscountInCents() {
-        return discountInCents;
-    }
-
-    public void setDiscountInCents(final Object discountInCents) {
-        this.discountInCents = integerOrNull(discountInCents);
-    }
-
+//    public Integer getDiscountInCents() {
+//        return discountInCents;
+//    }
+//
+//    public void setDiscountInCents(final Object discountInCents) {
+//        this.discountInCents = integerOrNull(discountInCents);
+//    }
+//
     public Boolean getAppliesToAllPlans() {
         return appliesToAllPlans;
     }
