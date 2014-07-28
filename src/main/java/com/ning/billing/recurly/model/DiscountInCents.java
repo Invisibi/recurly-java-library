@@ -11,13 +11,13 @@ public class DiscountInCents {
 
 
     @XmlElement(name = "USD")
-    private int USD;
+    private Integer USD;
 
-    public int getUSD(){
+    public Integer getUSD(){
         return USD;
     }
 
-    public void setUSD(int usd){
+    public void setUSD(Integer usd){
         this.USD = usd;
     }
 
